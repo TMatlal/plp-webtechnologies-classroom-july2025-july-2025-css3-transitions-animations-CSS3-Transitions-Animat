@@ -1,0 +1,55 @@
+/* Basic styling for layout */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+  background-color: #f0f0f0;
+}
+
+/* Header styling */
+header {
+  margin-bottom: 30px;
+}
+
+/* Button styling with transition */
+#animate-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#animate-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Box to animate */
+#animated-box {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background-color: coral;
+  position: relative;
+}
+
+/* Keyframe animation */
+@keyframes slideAndFade {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  50% {
+    left: 50%;
+    opacity: 0.5;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+/* Class to trigger animation */
+.animate {
+  animation: slideAndFade 2s ease-in-out;
+}
